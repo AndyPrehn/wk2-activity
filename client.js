@@ -6,7 +6,12 @@
  * 3. After the loop, log out the total number of
  *    hobbies
  */
-
+let groupHobbies = [ 'model trains', 'competitive sailing', 'photography'];
+// of loop
+for( let hobby of groupHobbies ) {
+    console.log( 'This is my hobby', hobby);
+} // end loop
+console.log(groupHobbies.length);
 
 // Example output
 // 1. swimming
@@ -24,7 +29,17 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
+let colors = ['teal', 'purple', 'green', 'red', 'blue'];
+let tealCount = 0; 
+console.log(tealCount);
 
+for(let color of colors) {
+    console.log('The color is', color );
+    if (color === 'teal') {
+        tealCount ++;
+      
+    } 
+}   console.log(tealCount);
 
 // Example output
 // green, red, teal, orange, teal
@@ -46,8 +61,23 @@
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
+let numbers =[ 8,9,4,3,7,1];
+let oddNumbers = [];
+let evenNumbers = [];
 
+for(let index of numbers){
+    for(let i = 0; i < 10; i +=2 ){
+        if(index === i){
+            evenNumbers.push(index);}
+        else if (index === i -1){
+            oddNumbers.push(index);}
+        }
+        }
+    
+    
 
+console.log(evenNumbers);
+console.log(oddNumbers);
 /**
  * #4 Flipping Switches
  * --------------------
@@ -56,7 +86,21 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+let booleanValues = [true, false, true, true, false];
+let toggled = [];
 
+for(let index of booleanValues){
+    if(index === true ){
+        index = false
+        toggled.push(index);
+    }
+    else if ( index === false){
+        index = true
+        toggled.push(index);
+    }
+}
+console.log(booleanValues);
+console.log(toggled);
 
 // Example output
 // true, false, true, true
